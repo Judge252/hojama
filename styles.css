@@ -93,6 +93,7 @@ body {
   backdrop-filter: blur(1px);
 }
 
+
 .hero-content {
   position: relative;
   z-index: 2;
