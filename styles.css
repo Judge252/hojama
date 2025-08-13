@@ -149,7 +149,7 @@ body {
 
 /* Hero Section */
 .hero {
-  background: url("22.png") center / cover no-repeat fixed;
+  background-color: #1a1a1a; /* Fallback color */
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -157,6 +157,26 @@ body {
   color: white;
   text-align: center;
   overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("22.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+
+@media (min-width: 769px) {
+  .hero::before {
+    background-attachment: fixed;
+  }
 }
 
 .hero-overlay {
@@ -236,6 +256,7 @@ body {
 
 .gradient-text {
   background: linear-gradient(135deg, #25d366, #4CAF50);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 4.5rem;
@@ -443,6 +464,8 @@ body {
     transform: scale(1);
   }
 }
+
+.hero-title {
   line-height: 1.2;
 }
 
