@@ -149,7 +149,7 @@ body {
 
 /* Hero Section */
 .hero {
-  background: url("8.jpg") center / cover no-repeat fixed;
+  background: url("22.jpg") center / cover no-repeat fixed;
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -166,8 +166,8 @@ body {
   right: 0;
   bottom: 0;
   background: linear-gradient(135deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.5) 100%);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
 }
 
 .hero-particles {
